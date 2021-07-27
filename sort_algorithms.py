@@ -1,4 +1,4 @@
-#Countung Sort
+#Counting Sort
 def counting_sort(A):
     m = max(A)
     count = [0] * (m+1)
