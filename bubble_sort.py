@@ -13,9 +13,9 @@ def bubble_sort(C):
 
 input_str = input('Enter numbers (Use Comma to separate the numbers)\nExample: 9,-5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
-C = list(map(int, input_str.split(',')))
 
 try:
+    C = list(map(int, input_str.split(',')))
     print(bubble_sort(C))
 except:
     print("input is not valid")

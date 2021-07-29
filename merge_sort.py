@@ -23,9 +23,9 @@ def merge_sort(E):
 
 input_str = input('Enter numbers (Use Comma to separate the numbers)\nExample: 9,-5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
-E = list(map(int, input_str.split(',')))
 
 try:
+    E = list(map(int, input_str.split(',')))
     print(merge_sort(E))
 except:
     print("input is not valid")

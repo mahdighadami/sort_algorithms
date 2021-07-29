@@ -15,9 +15,9 @@ def counting_sort(A):
 
 input_str = input('Enter "non negetive"!!! numbers (Use Comma to separate the numbers)\nExample: 9,5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
-A = list(map(int, input_str.split(',')))
 
 try:
+    A = list(map(int, input_str.split(',')))
     print(counting_sort(A))
 except:
     print("input is not valid")

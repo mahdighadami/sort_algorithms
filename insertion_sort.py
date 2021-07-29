@@ -11,9 +11,9 @@ def insertion_sort(B):
 
 input_str = input('Enter numbers (Use Comma to separate the numbers)\nExample: 9,-5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
-B = list(map(int, input_str.split(',')))
 
 try:
+    B = list(map(int, input_str.split(',')))
     print(insertion_sort(B))
 except:
     print("input is not valid")

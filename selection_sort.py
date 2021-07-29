@@ -11,9 +11,9 @@ def selection_sort(D):
 
 input_str = input('Enter numbers (Use Comma to separate the numbers)\nExample: 9,-5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
-D = list(map(int, input_str.split(',')))
 
 try:
+    D = list(map(int, input_str.split(',')))
     print(selection_sort(D))
 except:
     print("input is not valid")
