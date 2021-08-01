@@ -7,4 +7,5 @@ A repo for sort algorithms in Data Structure
 * Bubble Sort
 * Seleection  Sort
 * Merge Sort
+* Bucket Sort
 
