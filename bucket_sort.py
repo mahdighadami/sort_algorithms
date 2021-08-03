@@ -42,7 +42,7 @@ def bucket_sort(F):
     return F
 
 #get input and try/exception:
-input_str = input('Enter integer numbers (Use Comma to separate the numbers)\nExample: 9,5,6,44,50\nNumbers: ')
+input_str = input('Enter non negative integer numbers (Use Comma to separate the numbers)\nExample: 9,5,6,44,50\nNumbers: ')
 input_str = input_str.replace(' ', '')
 
 try:
