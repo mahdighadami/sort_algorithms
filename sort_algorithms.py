@@ -51,6 +51,7 @@ C = [5, 12, 3, 4, 7, 1, 0, 6, 19, 8, 13, 4, 2, 10, 16]
 bubble_sort(C)
 
 
+
 #Seleection  Sort
 def selection_sort(D):
     n = len(D)
@@ -64,6 +65,8 @@ def selection_sort(D):
 
 D = [-5, 9, 6 , 14, 7, 8, 2, 0]
 selection_sort(D)
+
+
 
 #Merge Sort
 def merge_sort(E):
@@ -90,3 +93,36 @@ def merge_sort(E):
 
 E = [10 , 3, 7, 4, -6, -2, 8, 0, 5]
 print(merge_sort(E))
+
+
+
+#Bucket sort
+#you can write that type of sorting you want, here we are using this, for sorting two digits numbers:
+#this function helps you to get number of bucket that "n" argument is there:
+def get_bucket(n):
+    n = n // 10
+    return n
+#then we have main function:
+def bucket_sort(F):
+
+    max_num = max(F)
+    bucket_num = get_bucket(max_num) + 1
+    buckets = [[] for i in range(bucket_num)]
+
+    for i in F:
+        buckets[get_bucket(i)] += [i]
+
+
+    for i in range(bucket_num):
+        buckets[i] = selection_sort(buckets[i])
+
+
+    F = []
+    for i in range(bucket_num):
+        F += buckets[i]
+
+
+    return F
+
+F = [10 , 36, 7, 4, 56, 22, 8, 0, 72]
+print(merge_sort(F))
